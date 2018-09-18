@@ -18,8 +18,8 @@ client.on('message', msg => {
 client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('po-')){
- if(!message.author.id === '299606795888885763') return;
+if (message.content.startsWith('-bc-serverat')){
+ if(!message.author.id === '480313558501163009') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
