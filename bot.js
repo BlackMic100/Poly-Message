@@ -12,7 +12,8 @@ client.on('message', msg => {
 });
 
 
-
+var prefix = "$";
+client.on("message", message => {
 
             if (message.content.startsWith(prefix + "bc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
@@ -25,6 +26,7 @@ client.on('message', msg => {
  message.delete(); 
 };     
 });
+
 
 
 
