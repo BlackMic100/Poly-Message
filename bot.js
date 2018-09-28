@@ -12,10 +12,10 @@ client.on('message', msg => {
 });
 
 
-var prefix = "$";
+var prefix = "M";
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "bc")) {
+            if (message.content.startsWith(prefix + "b")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
